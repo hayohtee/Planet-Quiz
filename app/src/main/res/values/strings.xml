@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Planet Quiz</string>
+    <string name="header_text">Planet Quiz</string>
 
     <!-- Questions -->
     <string name="question_1">What is the largest planet?</string>
