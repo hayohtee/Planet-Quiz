@@ -1,14 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".AnswersFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/question_title"
+        style="@style/TextAppearance.AppCompat.Title"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="20dp"
+        android:textSize="25sp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        tools:text="@string/question_1" />
 
-</FrameLayout>
+    <Button
+        android:id="@+id/mercury_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:padding="15dp"
+        android:text="@string/mercury" />
+
+    <Button
+        android:id="@+id/venus_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:padding="15dp"
+        android:text="@string/venus" />
+
+    <Button
+        android:id="@+id/earth_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:padding="15dp"
+        android:text="@string/earth" />
+
+    <Button
+        android:id="@+id/mars_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:padding="15dp"
+        android:text="@string/mars" />
+
+    <Button
+        android:id="@+id/jupiter_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:padding="15dp"
+        android:text="@string/jupiter" />
+
+    <Button
+        android:id="@+id/saturn_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:padding="15dp"
+        android:text="@string/saturn" />
+
+    <Button
+        android:id="@+id/uranus_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:padding="15dp"
+        android:text="@string/uranus" />
+
+
+    <Button
+        android:id="@+id/neptune_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:padding="15dp"
+        android:text="@string/neptune" />
+
+    <TextView
+        android:id="@+id/answer_text"
+        style="@style/TextAppearance.AppCompat.Body1"
+        android:layout_width="match_parent"
+        android:gravity="start"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        tools:text="@string/question_1_answer" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
