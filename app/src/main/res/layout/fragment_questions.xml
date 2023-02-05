@@ -1,14 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
     tools:context=".QuestionsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="wrap_content"
+        android:textSize="30sp"
+        android:layout_marginVertical="20dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:text="@string/header_text" />
 
-</FrameLayout>
+    <Button
+        android:id="@+id/question_1_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/question_1"
+        android:textAllCaps="false"
+        android:padding="15dp"
+        android:layout_marginBottom="5dp"/>
+
+
+    <Button
+        android:id="@+id/question_2_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/question_2"
+        android:textAllCaps="false"
+        android:padding="15dp"
+        android:layout_marginBottom="5dp"/>
+
+
+    <Button
+        android:id="@+id/question_3_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/question_3"
+        android:textAllCaps="false"
+        android:padding="15dp"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
